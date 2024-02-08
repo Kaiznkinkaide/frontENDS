@@ -18,14 +18,20 @@ const LeaguePage = () => {
         apiFetch()
     }, [leagueParams.leaguename])
 
+    console.log("teams", teams);
+
     return (
         <>
+            <h2>{leagueParams.leaguename}</h2>
+            <h3>{teams?.[0]?.strSport}</h3>
             {teams?.map((team, index) => {
                 return(
-                    <Link key={index} to={`/${team?.strTeam}/details`}>
-                            <h2>{team?.strTeam}</h2>
-                            <h3>{team?.strStadiumLocation}</h3>
-                    </Link>
+                   <>
+                        <Link key={index} to={`/${team?.strTeam}/details`}>
+                                <h2>{team?.strTeam}</h2>
+                                <h3>{team?.strStadiumLocation}</h3>
+                        </Link>
+                   </>
                 )
             })}
         </>

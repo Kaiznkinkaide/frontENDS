@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const SportsList = () => {
     const {leagues, setLeagues} = useContext(mainContext)
 
-    
+    console.log("leagues", leagues);
 
     return (
         <>
