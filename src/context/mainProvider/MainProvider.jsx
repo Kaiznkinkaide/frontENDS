@@ -28,15 +28,14 @@ const MainProvider = ({children}) => {
         } 
         console.log(allLeagues);
         await Promise.all(apiFetch)
-        setLeagues(allLeagues)
       } 
       countries ? apiFetch() : null
     })
-  }, [countries])
-
-  console.log("leagues", leagues);
+  }, [countries, allLeagues])
 
   // setLeagues(allLeagues)
+  // console.log("leagues", leagues);
+
 
   return (
     <mainContext.Provider value={{countries, setCountries, leagues, setLeagues}}>
