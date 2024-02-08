@@ -15,10 +15,6 @@ const MainProvider = ({children}) => {
       console.log(resp.data.countries);
     }
     apiFetch()
-  }, [])
-
-  
-  useEffect(() => {
     countries.map((country) => {
       const apiFetch = async() => {
         const resp = await axios.get(`https://www.thesportsdb.com/api/v1/json/3/search_all_leagues.php?c=${country.name_en}`)
@@ -26,12 +22,14 @@ const MainProvider = ({children}) => {
         if (countryLeagues.countries !== null) {
           allLeagues.push(countryLeagues)
         } 
-        console.log(allLeagues);
         await Promise.all(apiFetch)
+        console.log(allLeagues);
       } 
       countries ? apiFetch() : null
     })
-  }, [countries, allLeagues])
+  }, [countries])
+
+  
 
   // setLeagues(allLeagues)
   // console.log("leagues", leagues);
