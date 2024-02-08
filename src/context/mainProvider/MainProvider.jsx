@@ -13,7 +13,7 @@ const MainProvider = ({children}) => {
         const resp = await axios.get(`https://www.thesportsdb.com/api/v1/json/3/search_all_leagues.php?c=${country}`)
         const countryLeagues = resp.data.countries
         leagues.push(countryLeagues)
-        console.log("leagues", leagues);
+        // console.log("leagues", leagues);
       } 
       countries ? apiFetch() : null
     })
