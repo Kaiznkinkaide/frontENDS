@@ -2,9 +2,12 @@ import React, { useContext } from 'react'
 import { mainContext } from '../../context/mainProvider/MainProvider'
 
 const Home = () => {
-  const {countries, setCountries} = useContext(mainContext)
+  const {countries, setCountries, leagues, setLeagues} = useContext(mainContext)
+
   return (
-    <div>Home</div>
+    <>
+      
+    </>
   )
 }
 
