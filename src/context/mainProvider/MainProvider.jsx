@@ -6,6 +6,7 @@ export const mainContext = createContext()
 
 const MainProvider = ({children}) => {
   const [leagues, setLeagues] = useState([])
+  const [teams, setTeams] = useState([])
 
   useEffect(() => {
     countries.map((country) => {
@@ -20,7 +21,7 @@ const MainProvider = ({children}) => {
   }, [countries])
 
   return (
-    <mainContext.Provider value={{leagues, setLeagues}}>
+    <mainContext.Provider value={{leagues, setLeagues, teams, setTeams}}>
         {children}
     </mainContext.Provider>
   )

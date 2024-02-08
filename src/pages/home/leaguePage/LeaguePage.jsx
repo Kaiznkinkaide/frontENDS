@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import axios from 'axios'
+import DetailPage from '../detailPage/DetailPage'
+import { mainContext } from '../../../context/mainProvider/MainProvider'
 
 const LeaguePage = () => {
     const leagueParams = useParams()
     console.log(leagueParams);
-    const [teams, setTeams] = useState([])
+    const {teams, setTeams} = useContext(mainContext)
 
     useEffect(() => {
         const apiFetch = async() => {
@@ -18,13 +20,11 @@ const LeaguePage = () => {
 
     return (
         <>
-            {teams.map((team, index) => {
+            {teams?.map((team, index) => {
                 return(
-                    <Link to={`/${team?.strTeam}/details`}>
-                        <div key={index}>
+                    <Link key={index} to={`/${team?.strTeam}/details`}>
                             <h2>{team?.strTeam}</h2>
                             <h3>{team?.strStadiumLocation}</h3>
-                        </div>
                     </Link>
                 )
             })}
