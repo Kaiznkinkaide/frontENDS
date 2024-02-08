@@ -3,12 +3,20 @@ import { mainContext } from '../../context/mainProvider/MainProvider'
 
 const SportsList = () => {
     const {leagues, setLeagues} = useContext(mainContext)
-    const [sortedLeagues, setSortedLeagues] = useState([])
 
-    // console.log("leagues", leagues);
+    
+
     return (
         <>
-
+            {leagues.forEach((league, index) => {
+                return(
+                    {league.map(())}
+                    <div key={index}>
+                        <h2>{league?.[0]?.strLeague}</h2>
+                        <h3>{league?.[0]?.strSport}</h3>
+                    </div>
+                )
+            })}
         </>
     )
 }

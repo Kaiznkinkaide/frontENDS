@@ -1,0 +1,345 @@
+[
+  {
+    "idLeague": "4328",
+    "strLeague": "English Premier League",
+    "strSport": "Soccer",
+    "strCountry": "England",
+    "strLeagueAlternate": "Premier League, EPL"
+  },
+  {
+    "idLeague": "4329",
+    "strLeague": "English League Championship",
+    "strSport": "Soccer",
+    "strCountry": "England",
+    "strLeagueAlternate": "Championship"
+  },
+  {
+    "idLeague": "4330",
+    "strLeague": "Scottish Premier League",
+    "strSport": "Soccer",
+    "strCountry": "Scotland",
+    "strLeagueAlternate": "Scottish Premiership, SPFL"
+  },
+  {
+    "idLeague": "4331",
+    "strLeague": "German Bundesliga",
+    "strSport": "Soccer",
+    "strCountry": "Germany",
+    "strLeagueAlternate": "Bundesliga, Fußball-Bundesliga"
+  },
+  {
+    "idLeague": "4332",
+    "strLeague": "Italian Serie A",
+    "strSport": "Soccer",
+    "strCountry": "Italy",
+    "strLeagueAlternate": "Serie A"
+  },
+  {
+    "idLeague": "4334",
+    "strLeague": "French Ligue 1",
+    "strSport": "Soccer",
+    "strCountry": "France",
+    "strLeagueAlternate": "Ligue 1 Conforama"
+  },
+  {
+    "idLeague": "4335",
+    "strLeague": "Spanish La Liga",
+    "strSport": "Soccer",
+    "strCountry": "Spain",
+    "strLeagueAlternate": "LaLiga Santander, La Liga"
+  },
+  {
+    "idLeague": "4336",
+    "strLeague": "Greek Superleague Greece",
+    "strSport": "Soccer",
+    "strCountry": "Greece",
+    "strLeagueAlternate": ""
+  },
+  {
+    "idLeague": "4337",
+    "strLeague": "Dutch Eredivisie",
+    "strSport": "Soccer",
+    "strCountry": "Netherlands",
+    "strLeagueAlternate": "Eredivisie"
+  },
+  {
+    "idLeague": "4338",
+    "strLeague": "Belgian First Division A",
+    "strSport": "Soccer",
+    "strCountry": "Belgium",
+    "strLeagueAlternate": "Jupiler Pro League"
+  },
+  {
+    "idLeague": "4339",
+    "strLeague": "Turkish Super Lig",
+    "strSport": "Soccer",
+    "strCountry": "Turkey",
+    "strLeagueAlternate": "Super Lig"
+  },
+  {
+    "idLeague": "4340",
+    "strLeague": "Danish Superliga",
+    "strSport": "Soccer",
+    "strCountry": "Denmark",
+    "strLeagueAlternate": ""
+  },
+  {
+    "idLeague": "4344",
+    "strLeague": "Portuguese Primeira Liga",
+    "strSport": "Soccer",
+    "strCountry": "Portugal",
+    "strLeagueAlternate": "Liga NOS"
+  },
+  {
+    "idLeague": "4346",
+    "strLeague": "American Major League Soccer",
+    "strSport": "Soccer",
+    "strCountry": "United States",
+    "strLeagueAlternate": "MLS, Major League Soccer"
+  },
+  {
+    "idLeague": "4347",
+    "strLeague": "Swedish Allsvenskan",
+    "strSport": "Soccer",
+    "strCountry": "Sweden",
+    "strLeagueAlternate": "Fotbollsallsvenskan"
+  },
+  {
+    "idLeague": "4350",
+    "strLeague": "Mexican Primera League",
+    "strSport": "Soccer",
+    "strCountry": "Mexico",
+    "strLeagueAlternate": "Liga MX"
+  },
+  {
+    "idLeague": "4351",
+    "strLeague": "Brazilian Serie A",
+    "strSport": "Soccer",
+    "strCountry": "Brazil",
+    "strLeagueAlternate": ""
+  },
+  {
+    "idLeague": "4354",
+    "strLeague": "Ukrainian Premier League",
+    "strSport": "Soccer",
+    "strCountry": "Ukraine",
+    "strLeagueAlternate": ""
+  },
+  {
+    "idLeague": "4355",
+    "strLeague": "Russian Football Premier League",
+    "strSport": "Soccer",
+    "strCountry": "Russia",
+    "strLeagueAlternate": "Чемпионат России по футболу"
+  },
+  {
+    "idLeague": "4356",
+    "strLeague": "Australian A-League",
+    "strSport": "Soccer",
+    "strCountry": "Australia",
+    "strLeagueAlternate": "A-League"
+  },
+  {
+    "idLeague": "4358",
+    "strLeague": "Norwegian Eliteserien",
+    "strSport": "Soccer",
+    "strCountry": "Norway",
+    "strLeagueAlternate": "Eliteserien"
+  },
+  {
+    "idLeague": "4359",
+    "strLeague": "Chinese Super League",
+    "strSport": "Soccer",
+    "strCountry": "China",
+    "strLeagueAlternate": ""
+  },
+  {
+    "idLeague": "4370",
+    "strLeague": "Formula 1",
+    "strSport": "Motorsport",
+    "strCountry": "France",
+    "strLeagueAlternate": "F1, Formula One, Formula1, Formula 1, Formula-1"
+  },
+  {
+    "idLeague": "4371",
+    "strLeague": "Formula E",
+    "strSport": "Motorsport",
+    "strCountry": "France",
+    "strLeagueAlternate": "Formula-E"
+  },
+  {
+    "idLeague": "4372",
+    "strLeague": "BTCC",
+    "strSport": "Motorsport",
+    "strCountry": "United Kingdom",
+    "strLeagueAlternate": "British Touring Car Championship"
+  },
+  {
+    "idLeague": "4373",
+    "strLeague": "IndyCar Series",
+    "strSport": "Motorsport",
+    "strCountry": "United States",
+    "strLeagueAlternate": ""
+  },
+  {
+    "idLeague": "4380",
+    "strLeague": "NHL",
+    "strSport": "Ice Hockey",
+    "strCountry": "United States",
+    "strLeagueAlternate": "National Hockey League"
+  },
+  {
+    "idLeague": "4381",
+    "strLeague": "UK Elite Ice Hockey League",
+    "strSport": "Ice Hockey",
+    "strCountry": "United Kingdom",
+    "strLeagueAlternate": ""
+  },
+  {
+    "idLeague": "4387",
+    "strLeague": "NBA",
+    "strSport": "Basketball",
+    "strCountry": "United States",
+    "strLeagueAlternate": "National Basketball Association"
+  },
+  {
+    "idLeague": "4388",
+    "strLeague": "NBA G League",
+    "strSport": "Basketball",
+    "strCountry": "United States",
+    "strLeagueAlternate": "NBA D League"
+  },
+  {
+    "idLeague": "4391",
+    "strLeague": "NFL",
+    "strSport": "American Football",
+    "strCountry": "United States",
+    "strLeagueAlternate": "NFL"
+  },
+  {
+    "idLeague": "4393",
+    "strLeague": "NASCAR Cup Series",
+    "strSport": "Motorsport",
+    "strCountry": "United States",
+    "strLeagueAlternate": "NASCAR Sprint Cup Series"
+  },
+  {
+    "idLeague": "4394",
+    "strLeague": "Italian Serie B",
+    "strSport": "Soccer",
+    "strCountry": "Italy",
+    "strLeagueAlternate": "Serie B"
+  },
+  {
+    "idLeague": "4395",
+    "strLeague": "Scottish Championship",
+    "strSport": "Soccer",
+    "strCountry": "Scotland",
+    "strLeagueAlternate": ""
+  },
+  {
+    "idLeague": "4396",
+    "strLeague": "English League 1",
+    "strSport": "Soccer",
+    "strCountry": "England",
+    "strLeagueAlternate": "League One, Sky Bet League One"
+  },
+  {
+    "idLeague": "4397",
+    "strLeague": "English League 2",
+    "strSport": "Soccer",
+    "strCountry": "England",
+    "strLeagueAlternate": "League Two, Sky Bet League Two"
+  },
+  {
+    "idLeague": "4398",
+    "strLeague": "Italian Serie C Girone C",
+    "strSport": "Soccer",
+    "strCountry": "Italy",
+    "strLeagueAlternate": "Serie C"
+  },
+  {
+    "idLeague": "4399",
+    "strLeague": "German 2. Bundesliga",
+    "strSport": "Soccer",
+    "strCountry": "Germany",
+    "strLeagueAlternate": "2. Bundesliga"
+  },
+  {
+    "idLeague": "4400",
+    "strLeague": "Spanish La Liga 2",
+    "strSport": "Soccer",
+    "strCountry": "Spain",
+    "strLeagueAlternate": "Segunda División, LaLiga SmartBank, LaLiga 123"
+  },
+  {
+    "idLeague": "4401",
+    "strLeague": "French Ligue 2",
+    "strSport": "Soccer",
+    "strCountry": "France",
+    "strLeagueAlternate": "Domino’s Ligue 2"
+  },
+  {
+    "idLeague": "4403",
+    "strLeague": "Swedish Superettan",
+    "strSport": "Soccer",
+    "strCountry": "Sweden",
+    "strLeagueAlternate": "Superettan"
+  },
+  {
+    "idLeague": "4404",
+    "strLeague": "Brazilian Serie B",
+    "strSport": "Soccer",
+    "strCountry": "Brazil",
+    "strLeagueAlternate": ""
+  },
+  {
+    "idLeague": "4405",
+    "strLeague": "CFL",
+    "strSport": "American Football",
+    "strCountry": "Canada",
+    "strLeagueAlternate": ""
+  },
+  {
+    "idLeague": "4406",
+    "strLeague": "Argentinian Primera Division",
+    "strSport": "Soccer",
+    "strCountry": "Argentina",
+    "strLeagueAlternate": "Liga Profesional de Fútbol"
+  },
+  {
+    "idLeague": "4407",
+    "strLeague": "MotoGP",
+    "strSport": "Motorsport",
+    "strCountry": "Spain",
+    "strLeagueAlternate": ""
+  },
+  {
+    "idLeague": "4408",
+    "strLeague": "Spanish Liga ACB",
+    "strSport": "Basketball",
+    "strCountry": "Spain",
+    "strLeagueAlternate": "Liga Endesa"
+  },
+  {
+    "idLeague": "4409",
+    "strLeague": "WRC",
+    "strSport": "Motorsport",
+    "strCountry": "Wales",
+    "strLeagueAlternate": "World Rally Championship"
+  },
+  {
+    "idLeague": "4410",
+    "strLeague": "British GT Championship",
+    "strSport": "Motorsport",
+    "strCountry": ["United Kingdom", "Wales", "Scotland", "Northern Ireland"],
+    "strLeagueAlternate": ""
+  },
+  {
+    "idLeague": "4411",
+    "strLeague": "WTCC",
+    "strSport": "Motorsport",
+    "strCountry": "United Kingdom",
+    "strLeagueAlternate": "FIA World Touring Car Championship"
+  }
+]
