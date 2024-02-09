@@ -1,5 +1,5 @@
 import React, { createContext, useEffect, useState } from "react";
-import countries from "../../assets/data/country";
+import countries from "../assets/data/country";
 
 export const mainContext = createContext();
 

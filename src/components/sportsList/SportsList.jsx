@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { mainContext } from "../../context/mainProvider/MainProvider";
+import { mainContext } from "../../context/MainProvider";
 import { Link } from "react-router-dom";
 
 const SportsList = () => {

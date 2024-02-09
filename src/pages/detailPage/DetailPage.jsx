@@ -1,6 +1,8 @@
 import React, { useContext } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { mainContext } from '../../context/mainProvider/MainProvider';
+import { mainContext } from '../../context/MainProvider';
+import "./detailPage.css"
+import Nav from '../../components/Nav/Nav';
 
 const DetailPage = () => {
   const detailParams = useParams()
@@ -23,6 +25,7 @@ const DetailPage = () => {
 
   return (
     <>
+      <Nav/>
       {filteredTeams
       ?(
         <>

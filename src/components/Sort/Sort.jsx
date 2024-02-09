@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { mainContext } from "../../context/mainProvider/MainProvider";
+import { mainContext } from "../../context/MainProvider";
 
 const Sort = () => {
   const { setSportFilter, setCountryFilter, sports, countries } =

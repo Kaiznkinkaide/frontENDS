@@ -7,7 +7,6 @@ import DetailPage from './pages/detailPage/DetailPage'
 
 function App() {
 
-
   return (
     <>
     <Routes>
@@ -16,8 +15,6 @@ function App() {
       <Route path='/:teamname/details' element={<DetailPage/>}/>
     </Routes>
     </>
-
-    
   )
 }
 

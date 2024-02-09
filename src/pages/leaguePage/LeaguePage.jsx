@@ -1,7 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
-import { mainContext } from "../../context/mainProvider/MainProvider";
+import { mainContext } from "../../context/MainProvider";
+import Nav from "../../components/Nav/Nav";
 
 const LeaguePage = () => {
     const leagueParams = useParams();
@@ -30,25 +31,28 @@ const LeaguePage = () => {
 
     return (
         <>
-            {leagueParams ? (
-                <>
-                    <h2>{leagueParams.leaguename}</h2>
-                    <h3>{backup?.[0]?.strSport}</h3>
-                    {backup?.map((team, index) => {
-
-                        return (
-                            <div key={index}>
-                                <Link to={`/${team?.strTeam}/details`}>
-                                    <h2>{team?.strTeam}</h2>
-                                    <h3>{team?.strStadiumLocation}</h3>
-                                </Link>
-                            </div>
-                        );
-                    })}
-                </>
-            ) : (
-                <p>Loading...</p>
-            )}
+            <Nav/>
+            <section>
+                {leagueParams ? (
+                    <>
+                        <h1>{leagueParams.leaguename}</h1>
+                        <h2>{backup?.[0]?.strSport}</h2>
+                        {backup?.map((team, index) => {
+    
+                            return (
+                                <div key={index}>
+                                    <Link to={`/${team?.strTeam}/details`}>
+                                        <h3>{team?.strTeam}</h3>
+                                        <h4>{team?.strStadiumLocation}</h4>
+                                    </Link>
+                                </div>
+                            );
+                        })}
+                    </>
+                ) : (
+                    <p>Loading...</p>
+                )}
+            </section>
         </>
     );
 };

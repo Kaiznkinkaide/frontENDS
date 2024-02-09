@@ -1,0 +1,43 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+    background-color: black;
+    position: fixed;
+    width: 100vw;
+}
+
+.navDivLogo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo {
+    font-size: var(--font-size-logo);
+    font-weight: var(--font-weight-rest);
+    font-family: var(--font-family-OpenSans);
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: black;
+    border: 2px solid white;
+    padding: 0.5rem;
+}
+
+.searchInput {
+    background: none;
+    border: none;
+    width: 2rem;
+    transition: 0.5s all ease-in-out;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+
+.searchInput[type=text]:focus{
+    width: 15rem;
+}
