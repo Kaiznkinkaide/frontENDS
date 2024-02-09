@@ -35,14 +35,14 @@ const LeaguePage = () => {
                     <h2>{leagueParams.leaguename}</h2>
                     <h3>{backup?.[0]?.strSport}</h3>
                     {backup?.map((team, index) => {
-                        console.log("backupinMap", team);
+
                         return (
-                            <>
-                                <Link key={index} to={`/${team?.strTeam}/details`}>
+                            <div key={index}>
+                                <Link to={`/${team?.strTeam}/details`}>
                                     <h2>{team?.strTeam}</h2>
                                     <h3>{team?.strStadiumLocation}</h3>
                                 </Link>
-                            </>
+                            </div>
                         );
                     })}
                 </>
