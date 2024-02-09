@@ -1,39 +1,53 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import axios from 'axios'
-import DetailPage from '../detailPage/DetailPage'
 import { mainContext } from '../../../context/mainProvider/MainProvider'
 
 const LeaguePage = () => {
     const leagueParams = useParams()
     console.log(leagueParams);
-    const {teams, setTeams} = useContext(mainContext)
+    const {teams, setTeams, backup, setBackup} = useContext(mainContext)
+    // ! Backup müsste in teams zurückgesetzt werden
 
     useEffect(() => {
-        const apiFetch = async() => {
-            const resp = await axios.get(`https://www.thesportsdb.com/api/v1/json/3/search_all_teams.php?l=${leagueParams.leaguename}`)
-            setTeams(resp.data.teams)
-            console.log(resp.data.teams);
-        }
-        apiFetch()
-    }, [leagueParams.leaguename])
+        const apiFetch = async () => {
+            try {
+                const response = await fetch(`https://www.thesportsdb.com/api/v1/json/60130162/search_all_teams.php?l=${leagueParams.leaguename}`);
+                const data = await response.json();
+                setTeams(data.teams)
+                setBackup(data.teams);
+                // console.log(data.teams);
+            } catch (error) {
+                console.error(error);
+            }
+        };
+        leagueParams.leaguename ? apiFetch() : null
+    }, [leagueParams.leaguename]);
 
-    console.log("teams", teams);
+    console.log("backup", backup);
 
     return (
         <>
-            <h2>{leagueParams.leaguename}</h2>
-            <h3>{teams?.[0]?.strSport}</h3>
-            {teams?.map((team, index) => {
-                return(
-                   <>
-                        <Link key={index} to={`/${team?.strTeam}/details`}>
-                                <h2>{team?.strTeam}</h2>
-                                <h3>{team?.strStadiumLocation}</h3>
-                        </Link>
-                   </>
-                )
-            })}
+            {leagueParams
+            ? (
+                <>
+                    <h2>{leagueParams.leaguename}</h2>
+                    <h3>{backup?.[0]?.strSport}</h3>
+                    {backup?.map((team, index) => {
+                        console.log("backupinMap", team);
+                        return(
+                            <>
+                                <Link key={index} to={`/${team?.strTeam}/details`}>
+                                        <h2>{team?.strTeam}</h2>
+                                        <h3>{team?.strStadiumLocation}</h3>
+                                </Link>
+                            </>
+                        )
+                    })}
+                </>
+            )
+            : (<p>Loading...</p>)
+            }
         </>
     )
 }

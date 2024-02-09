@@ -9,7 +9,10 @@ const SportsList = () => {
 
     return (
         <>
-            {leagues?.map((league, index) => {
+            {leagues
+            ? (
+                <>
+                    {leagues?.map((league, index) => {
                 return(
                     <div key={index}>
                         {league
@@ -33,6 +36,11 @@ const SportsList = () => {
 
                 )
             })}
+                </>
+            )
+            : ( <p>Loading...</p>)
+            }
+            
         </>
     )
 }
