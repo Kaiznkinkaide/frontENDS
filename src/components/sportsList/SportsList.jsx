@@ -13,7 +13,7 @@ const SportsList = () => {
         <>
           {Object.entries(filteredLeagues).map(([letter, leagues]) => (
             <div key={letter}>
-              <h2>{letter}</h2>
+              {leagues.length !== 0 ? <h2>{letter}</h2> : null}
               {leagues.map((league, index) => (
                 <div key={index}>
                   <h3>{league.strLeague}</h3>
