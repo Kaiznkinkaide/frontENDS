@@ -16,6 +16,8 @@ function App() {
       <Route path='/:teamname/details' element={<DetailPage/>}/>
     </Routes>
     </>
+
+    
   )
 }
 
