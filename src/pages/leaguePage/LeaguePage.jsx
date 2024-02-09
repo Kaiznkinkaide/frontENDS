@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
-import { mainContext } from "../../../context/mainProvider/MainProvider";
+import { mainContext } from "../../context/mainProvider/MainProvider";
 
 const LeaguePage = () => {
     const leagueParams = useParams();

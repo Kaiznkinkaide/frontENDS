@@ -2,8 +2,8 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Home from './pages/home/Home'
-import LeaguePage from './pages/home/leaguePage/LeaguePage'
-import DetailPage from './pages/home/detailPage/DetailPage'
+import LeaguePage from './pages/leaguePage/LeaguePage'
+import DetailPage from './pages/detailPage/DetailPage'
 
 function App() {
 

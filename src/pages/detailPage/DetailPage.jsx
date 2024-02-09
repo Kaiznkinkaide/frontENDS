@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { mainContext } from '../../../context/mainProvider/MainProvider';
+import { mainContext } from '../../context/mainProvider/MainProvider';
 
 const DetailPage = () => {
   const detailParams = useParams()
