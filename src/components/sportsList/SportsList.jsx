@@ -1,48 +1,32 @@
-import React, { useContext, useState } from 'react'
-import { mainContext } from '../../context/mainProvider/MainProvider'
-import { Link } from 'react-router-dom'
+import React, { useContext, useEffect, useState } from "react";
+import { mainContext } from "../../context/mainProvider/MainProvider";
+import { Link } from "react-router-dom";
 
 const SportsList = () => {
-    const {leagues, setLeagues} = useContext(mainContext)
+  const { filteredLeagues } = useContext(mainContext);
 
-    console.log("leagues", leagues);
-
-    return (
+  return (
+    <>
+      {Object.entries(filteredLeagues).length === 0 ? (
+        <p>Loading...</p>
+      ) : (
         <>
-            {leagues
-            ? (
-                <>
-                    {leagues?.map((league, index) => {
-                return(
-                    <div key={index}>
-                        {league
-                        ? (
-                        <>
-                            {league.map((leagueMap, index) => {
-                                // console.log("im map", leagueMap);
-                                return(
-                                <div key={index}>
-                                    <h2>{leagueMap?.strLeague}</h2>
-                                    <h3>{leagueMap?.strSport}</h3>
-                                    <Link to={`/${leagueMap?.strLeague}`}>Test</Link>
-                                </div>
-                                )
-                            })}
-                        </>
-                        )
-                        : ( <p>Loading....</p>)
-                        }
-                    </div>
-
-                )
-            })}
-                </>
-            )
-            : ( <p>Loading...</p>)
-            }
-            
+          {Object.entries(filteredLeagues).map(([letter, leagues]) => (
+            <div key={letter}>
+              <h2>{letter}</h2>
+              {leagues.map((league, index) => (
+                <div key={index}>
+                  <h3>{league.strLeague}</h3>
+                  <h4>{league.strSport}</h4>
+                  <Link to={`/${league.strLeague}`}>Test</Link>
+                </div>
+              ))}
+            </div>
+          ))}
         </>
-    )
-}
+      )}
+    </>
+  );
+};
 
-export default SportsList
+export default SportsList;
