@@ -1,7 +1,6 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { mainContext } from "../../context/mainProvider/MainProvider";
 import SportsList from "../../components/sportsList/SportsList";
-import Navbar from "../../components/Nav/Nav";
 import Nav from "../../components/Nav/Nav";
 import Sort from "../../components/Sort/Sort";
 
