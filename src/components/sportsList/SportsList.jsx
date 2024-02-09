@@ -18,7 +18,7 @@ const SportsList = () => {
                                 <div key={index}>
                                     <h3>{league.strLeague}</h3>
                                     <h4>{league.strSport}</h4>
-                                    <Link to={`/${league.strLeague}`}>Test</Link>
+                                    <Link to={`/${league.strLeague}`}>Teams</Link>
                                 </div>
                             ))}
                         </div>
