@@ -34,10 +34,6 @@ h1 {
     cursor: pointer;
 }
 
-.color:hover {
-    
-}
-
 .rect {
     transform: translateY(100%);
     fill: rgb(232, 53, 57);
