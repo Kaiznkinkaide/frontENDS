@@ -19,12 +19,6 @@ header {
     width: 30%;
 }
 
-/* .logo {
-    font-size: var(--font-size-logo);
-    font-weight: var(--font-weight-rest);
-    font-family: var(--font-family-OpenSans);
-} */
-
 .search {
     display: flex;
     align-items: center;

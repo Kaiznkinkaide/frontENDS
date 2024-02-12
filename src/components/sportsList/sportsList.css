@@ -27,11 +27,41 @@
     display: flex;
     align-items: baseline;
     gap: 1rem;
+    width: max-content;
+  
 }
 
-.homeLinkLeagues:hover {
-    text-decoration: underline;
-    
+/* .homeLinkLeagues:hover {
+    border-bottom: 1.1rem solid var(--color-red);
+    text-decoration: 1rem underline;
+    text-underline-offset: 1rem;
+    color: var(--color-red);
+    transition: 0.1s ease-in-out;
+    text-underline-position: below;
+} */
+
+.hover-underline-animation {
+    display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+.hover-underline-animation::after {
+    content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .homeH3Leagues {
