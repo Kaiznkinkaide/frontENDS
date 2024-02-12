@@ -1,0 +1,47 @@
+main {
+    padding-top: 10rem;
+}
+
+.detailFirstImg {
+    width: 30%;
+    height: max-content;
+}
+
+.detailLinkLeagues {
+    display: flex;
+    align-items: last baseline;
+    gap: 1rem;
+    position: relative;
+    transition: 0.3s;
+    max-width: 100%;
+    width: max-content;
+    cursor: pointer;
+}
+
+.detailLinkLeagues::after {
+    content: "";
+    background-color: black;
+	position: absolute;
+	bottom: 7%;
+	left: 0;
+	height: 1rem;
+	width: 0;
+	transition: 0.3s;
+    z-index: -2;
+}
+
+.detailLinkLeagues:hover, .detailLinkLeagues:focus {
+    color: var(--color-red);
+}
+
+.detailLinkLeagues:hover::after, .detailLinkLeagues:focus::after {
+    background-color: var(--color-red);
+    width: 100%;
+}
+
+.detailH3Leagues {
+    font-size: var(--font-size-h3-detail);
+    color: white;
+    font-family: var(--font-family-Monsterrat);
+    font-weight: var(--font-weight-rest);
+}

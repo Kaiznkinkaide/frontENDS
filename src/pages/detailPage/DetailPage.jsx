@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom'
 import { mainContext } from '../../context/MainProvider';
 import "./detailPage.css"
 import Nav from '../../components/Nav/Nav';
+import replacement from "../../assets/img/replacement.jpg"
 
 const DetailPage = () => {
   const detailParams = useParams()
@@ -26,6 +27,7 @@ const DetailPage = () => {
   return (
     <>
       <Nav/>
+      <main>
       {filteredTeams
       ?(
         <>
@@ -35,7 +37,7 @@ const DetailPage = () => {
               <section key={index}>
                 <div>
                   <h2>{filteredTeam?.strTeam}</h2>
-                  <img src={filteredTeam?.strStadiumThumb} alt={filteredTeam?.strTeam} />
+                  <img src={filteredTeam?.strStadiumThumb ? filteredTeam?.strStadiumThumb : replacement} alt={filteredTeam?.strTeam} className='detailFirstImg'/>
                 </div>
                 <div>
                   <h3>{filteredTeam?.strCountry}</h3>
@@ -49,13 +51,13 @@ const DetailPage = () => {
                 </div>
                 <div>
                   <p>COMPETITIONS</p>
-                  <h3>{filteredTeam?.strLeague}</h3>
-                  <h3>{filteredTeam?.strLeague2}</h3>
-                  <h3>{filteredTeam?.strLeague3}</h3>
-                  <h3>{filteredTeam?.strLeague4}</h3>
-                  <h3>{filteredTeam?.strLeague5}</h3>
-                  <h3>{filteredTeam?.strLeague6}</h3>
-                  <h3>{filteredTeam?.strLeague7}</h3>
+                  <Link to={`/${filteredTeam?.strLeague}`} className="detailLinkLeagues"><h3 className='detailH3Leagues'>{filteredTeam?.strLeague}</h3></Link>
+                  <Link to={`/${filteredTeam?.strLeague}`} className="detailLinkLeagues"><h3 className='detailH3Leagues'>{filteredTeam?.strLeague2}</h3></Link>
+                  <Link to={`/${filteredTeam?.strLeague}`} className="detailLinkLeagues"><h3 className='detailH3Leagues'>{filteredTeam?.strLeague3}</h3></Link>
+                  <Link to={`/${filteredTeam?.strLeague}`} className="detailLinkLeagues"><h3 className='detailH3Leagues'>{filteredTeam?.strLeague4}</h3></Link>
+                  <Link to={`/${filteredTeam?.strLeague}`} className="detailLinkLeagues"><h3 className='detailH3Leagues'>{filteredTeam?.strLeague5}</h3></Link>
+                  <Link to={`/${filteredTeam?.strLeague}`} className="detailLinkLeagues"><h3 className='detailH3Leagues'>{filteredTeam?.strLeague6}</h3></Link>
+                  <Link to={`/${filteredTeam?.strLeague}`} className="detailLinkLeagues"><h3 className='detailH3Leagues'>{filteredTeam?.strLeague7}</h3></Link>
                 </div>
                 <div>
                   <h2>DESCRIPTION</h2>
@@ -85,6 +87,7 @@ const DetailPage = () => {
         </>
       )
       : (<p>Loading...</p>)}
+      </main>
     </>
   )
 }

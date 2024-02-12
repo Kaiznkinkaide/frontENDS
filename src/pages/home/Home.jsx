@@ -5,7 +5,6 @@ import SportsList from "../../components/sportsList/SportsList";
 import Nav from "../../components/Nav/Nav";
 import Sort from "../../components/Sort/Sort";
 import imgHome from "../../assets/img/imgHome.png"
-import Arrow from "../../assets/img/Group_3.svg"
 
 
 const Home = () => {

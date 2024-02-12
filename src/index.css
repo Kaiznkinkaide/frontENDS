@@ -28,6 +28,7 @@
   --font-size-h1-detail: 6rem;
   --font-size-h2: 5.25rem;
   --font-size-h3: 3rem;
+  --font-size-h3-detail: 2.25rem;
   --font-size-h4: 1.5rem;
   --font-size-logo: 1.5rem;
   --font-size-letter: 18.75rem;
@@ -37,6 +38,11 @@
 
   --font-weight-h4-p: 400;
   --font-weight-rest: 700;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Media Queries */
