@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { mainContext } from "../../context/MainProvider";
-import arrow from "../../assets/img/arrow.png"
+import logo from "../../assets/img/SPORTOPOLIS-3000.png"
 import search from "../../assets/img/search.png"
 import "./nav.css"
 
@@ -11,8 +11,8 @@ const Nav = () => {
   return (
     <header>
       <div className="navDivLogo">
-        <img src={arrow} alt="red arrow" />
-        <p className="logo">SPORTOPOLIS 3000</p>
+        <img src={logo} alt="red arrow" className="imgLogo"/>
+        {/* <p className="logo">SPORTOPOLIS 3000</p> */}
       </div>
       <nav className="search">
         <img src={search} alt="magnifier" />

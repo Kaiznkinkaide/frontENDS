@@ -1,3 +1,25 @@
 main {
-    padding-top: 15rem;
+    padding-top: 10rem;
+}
+
+.homeDivH1Image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.homeImage {
+    width: 80%;
+    z-index: -2;
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+    color: var(--color-red);
+    font-family: var(--font-family-Monsterrat);
+    right: 0;
+    margin-right: 5rem;
+    text-align: end;
+    position: absolute;
 }

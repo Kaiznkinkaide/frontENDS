@@ -13,9 +13,9 @@ const Home = () => {
     <>
       <Nav />
       <main>
-        <div>
+        <div className="homeDivH1Image">
+          <img src={imgHome} alt='Baseballplayer reaching the Inning' className="homeImage"/>
           <h1>FIND YOUR LEAGUE</h1>
-          <img src={imgHome} alt='Baseballplayer reaching the Inning' />
         </div>
         <Sort />
         <SportsList />

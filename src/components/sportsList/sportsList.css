@@ -1,0 +1,49 @@
+.homeDivSportList {
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.homeBigLetters {
+    font-size: var(--font-size-letter);
+    text-shadow: 3px 3px 0 var(--color-red), -3px -3px 0 var(--color-red), 3px -3px 0 var(--color-red), -3px 3px 0 var(--color-red), 3px 0 0 var(--color-red), 0 3px 0 var(--color-red), -3px 0 0 var(--color-red), 0 -3px 0 var(--color-red);
+    color: black;
+    font-family: var(--font-family-Monsterrat);
+    position: absolute;
+    z-index: -2;
+    line-height: 0.7;
+}
+
+.homeDivAllLeagues {
+    margin-top: 9.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.homeLinkLeagues {
+    margin-left: 9rem;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.homeLinkLeagues:hover {
+    text-decoration: underline;
+    
+}
+
+.homeH3Leagues {
+    font-size: var(--font-size-h3);
+    color: white;
+    font-family: var(--font-family-Monsterrat);
+    font-weight: var(--font-weight-rest);
+}
+
+.homeH4Leagues {
+    font-size: var(--font-size-h4);
+    color: white;
+    font-family: var(--font-family-OpenSans);
+    font-weight: var(--font-weight-h4-p);
+}
