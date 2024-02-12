@@ -12,7 +12,6 @@ const Nav = () => {
     <header>
       <div className="navDivLogo">
         <img src={logo} alt="red arrow" className="imgLogo"/>
-        {/* <p className="logo">SPORTOPOLIS 3000</p> */}
       </div>
       <nav className="search">
         <img src={search} alt="magnifier" />
