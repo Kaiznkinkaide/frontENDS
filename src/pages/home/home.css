@@ -33,3 +33,17 @@ h1 {
     border: none;
     cursor: pointer;
 }
+
+.color:hover {
+    
+}
+
+.rect {
+    transform: translateY(100%);
+    fill: rgb(232, 53, 57);
+    transition: transform 0.3s ease-in-out;
+}
+
+.svg:hover .rect {
+    transform: translateY(0);
+} 

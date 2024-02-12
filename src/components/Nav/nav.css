@@ -2,7 +2,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2.5rem;
+    padding: 1rem 2.5rem;
     background-color: black;
     position: fixed;
     width: 100vw;
@@ -38,6 +38,7 @@ header {
     cursor: pointer;
 }
 
-.searchInput[type=text]:focus{
+.searchInput[type=text]:focus, .searchInput[type=text]:hover{
     width: 15rem;
 }
+
