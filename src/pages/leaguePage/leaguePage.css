@@ -1,0 +1,55 @@
+.leagueMain {
+    display: flex;
+    flex-direction: column;
+}
+
+.leaguePageSection {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.leagueContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.leagueImage {
+    width: 25%;
+    height: auto;
+}
+
+.leagueText {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family-Monsterrat);
+    font-weight: bold;
+}
+
+.leaguePageH1 {
+    font-size: var(--font-size-h1);
+    color: var(--color-red);
+
+}
+
+.leaguePageH2 {
+    font-size: var(--font-size-h2);
+}
+
+.leagueResults {
+    display: flex;
+    font-family: var(--font-family-Monsterrat);
+    border: 3px solid lightgreen;
+}
+
+.leaguePageH3 {
+
+    font-size: var(--font-size-h3);
+    color: white;
+}
+
+.leaguePageH4 {
+    font-size: var(--font-size-h4);
+    color: white;
+}

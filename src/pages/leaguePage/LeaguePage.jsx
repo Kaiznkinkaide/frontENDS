@@ -3,6 +3,8 @@ import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 import { mainContext } from "../../context/MainProvider";
 import Nav from "../../components/Nav/Nav";
+import "./leaguePage.css"
+import imgLeague from "../../assets/img/imgLeague.png"
 
 const LeaguePage = () => {
     const leagueParams = useParams();
@@ -31,28 +33,33 @@ const LeaguePage = () => {
 
     return (
         <>
-            <Nav/>
-            <section>
-                {leagueParams ? (
-                    <>
-                        <h1>{leagueParams.leaguename}</h1>
-                        <h2>{backup?.[0]?.strSport}</h2>
-                        {backup?.map((team, index) => {
-    
-                            return (
-                                <div key={index}>
-                                    <Link to={`/${team?.strTeam}/details`}>
-                                        <h3>{team?.strTeam}</h3>
-                                        <h4>{team?.strStadiumLocation}</h4>
-                                    </Link>
-                                </div>
-                            );
-                        })}
-                    </>
-                ) : (
-                    <p>Loading...</p>
-                )}
-            </section>
+            <Nav />
+            <main className="leagueMain">
+                <section className="leaguePageSection">
+                    {leagueParams ? (
+                        <div className="leagueContent">
+                            {/* <img src={imgLeague} alt='matchfield' className="leagueImage"/> */}
+                            <div className="leagueText">
+                                <p className="leaguePageH1">{leagueParams.leaguename}</p>
+                                <p className="leaguePageH2">{backup?.[0]?.strSport}</p>
+                            </div>
+                            {backup?.map((team, index) => {
+
+                                return (
+                                    <div className="leagueResults" key={index}>
+                                        <Link to={`/${team?.strTeam}/details`}>
+                                            <h3 className="leaguePageH3">{team?.strTeam}</h3>
+                                            <h4 className="leaguePageH4">{team?.strStadiumLocation}</h4>
+                                        </Link>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    ) : (
+                        <p>Loading...</p>
+                    )}
+                </section>
+            </main>
         </>
     );
 };
