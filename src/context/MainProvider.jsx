@@ -11,6 +11,7 @@ const MainProvider = ({ children }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [sportFilter, setSportFilter] = useState("");
   const [countryFilter, setCountryFilter] = useState("");
+  const [showArrow, setShowArrow] = useState(false);
 
   const sports = [
     "Soccer",
@@ -114,6 +115,8 @@ const MainProvider = ({ children }) => {
         setCountryFilter,
         sports,
         countries,
+        showArrow,
+        setShowArrow
       }}
     >
       {children}

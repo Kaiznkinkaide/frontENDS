@@ -39,10 +39,31 @@
   --font-weight-rest: 700;
 }
 
+/* Media Queries */
 
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
 
 html {
-  font-size: 10px;
+  font-size: 8px;
 }
-} */
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  html {
+    font-size: 6px;
+  }
+
+  .arrow {
+    display: none !important;
+  }
+  }
+
+
+  @media only screen and (max-width: 400px) {
+
+    html {
+      font-size: 5px;
+    }
+    }

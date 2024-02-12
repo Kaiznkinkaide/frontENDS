@@ -1,5 +1,6 @@
 main {
     padding-top: 10rem;
+    position: relative;
 }
 
 .homeDivH1Image {
@@ -22,4 +23,13 @@ h1 {
     margin-right: 5rem;
     text-align: end;
     position: absolute;
+}
+
+.arrow {
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    background: none;
+    border: none;
+    cursor: pointer;
 }

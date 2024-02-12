@@ -18,8 +18,7 @@ const SportsList = () => {
                             <div className="homeDivAllLeagues">
                                 {leagues.map((league, index) => (
                                     <Link to={`/${league.strLeague}`} key={index} className="homeLinkLeagues">
-                                        <h3 className="homeH3Leagues">{league.strLeague}</h3>
-                                        <h4 className="homeH4Leagues">{league.strSport}</h4>
+                                        <h3 className="homeH3Leagues">{league.strLeague} <span className="homeH4Leagues">{league.strSport}</span></h3>
                                     </Link>
                                 ))}
                             </div>

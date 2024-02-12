@@ -13,55 +13,49 @@
     position: absolute;
     z-index: -2;
     line-height: 0.7;
+    margin-top: 3rem;
 }
 
 .homeDivAllLeagues {
-    margin-top: 9.5rem;
+    margin-top: 12rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
+    max-width: 100%;
+    margin-left: 9rem;
+    margin-right: 5rem;
 }
 
 .homeLinkLeagues {
-    margin-left: 9rem;
     display: flex;
-    align-items: baseline;
+    align-items: last baseline;
     gap: 1rem;
+    position: relative;
+    transition: 0.3s;
+    max-width: 100%;
     width: max-content;
-  
+    cursor: pointer;
 }
 
-/* .homeLinkLeagues:hover {
-    border-bottom: 1.1rem solid var(--color-red);
-    text-decoration: 1rem underline;
-    text-underline-offset: 1rem;
+.homeLinkLeagues::after {
+    content: "";
+    background-color: black;
+	position: absolute;
+	bottom: 7%;
+	left: 0;
+	height: 1rem;
+	width: 0;
+	transition: 0.3s;
+    z-index: -2;
+}
+
+.homeLinkLeagues:hover, .homeLinkLeagues:focus {
     color: var(--color-red);
-    transition: 0.1s ease-in-out;
-    text-underline-position: below;
-} */
-
-.hover-underline-animation {
-    display: inline-block;
-  position: relative;
-  color: #0087ca;
 }
 
-.hover-underline-animation::after {
-    content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #0087ca;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.hover-underline-animation:hover::after {
-    transform: scaleX(1);
-  transform-origin: bottom left;
+.homeLinkLeagues:hover::after, .homeLinkLeagues:focus::after {
+    background-color: var(--color-red);
+    width: 100%;
 }
 
 .homeH3Leagues {
