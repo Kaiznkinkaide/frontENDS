@@ -37,14 +37,14 @@
     font-size: var(--font-size-h2);
 }
 
-.leagueResults {
+.leagueResults a {
     display: flex;
+    align-items: baseline;
     font-family: var(--font-family-Monsterrat);
     border: 3px solid lightgreen;
 }
 
 .leaguePageH3 {
-
     font-size: var(--font-size-h3);
     color: white;
 }
