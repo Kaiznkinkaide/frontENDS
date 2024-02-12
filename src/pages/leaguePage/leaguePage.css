@@ -1,10 +1,11 @@
 .leagueMain {
+    width: 100vw;
     display: flex;
     flex-direction: column;
+    margin-left: 3rem;
 }
 
 .leaguePageSection {
-    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -20,25 +21,30 @@
 }
 
 .leagueImage {
-    width: 40%;
+    width: 50%;
     height: max-content;
+    margin-left: 1rem;
     position: relative;
-
     z-index: -2;
 
 }
 
 .leagueText {
+    width: 40%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     font-family: var(--font-family-Monsterrat);
     font-weight: bold;
-    line-height: -3%;
+    text-transform: uppercase;
+    line-height: 1;
+    align-items: end;
 }
 
 .leaguePageH1 {
     font-size: var(--font-size-h1);
     color: var(--color-red);
+
 }
 
 .leaguePageH2 {
@@ -49,6 +55,7 @@
     display: flex;
     align-items: baseline;
     font-family: var(--font-family-Monsterrat);
+    margin-top: 3rem;
 }
 
 .leaguePageH3 {
