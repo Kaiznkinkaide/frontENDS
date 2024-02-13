@@ -2,21 +2,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2.5rem;
+    padding: 0 2.5rem;
     background-color: black;
     position: fixed;
     width: 100vw;
+    height: 20vh;
     z-index: 2;
 }
 
-.navDivLogo {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
 .imgLogo {
-    width: 30%;
+    width: 20rem;
 }
 
 .search {

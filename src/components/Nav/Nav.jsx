@@ -11,9 +11,7 @@ const Nav = () => {
 
   return (
     <header>
-      <div className="navDivLogo">
-        <Link to={'/'}><img src={logo} alt="red arrow" className="imgLogo"/></Link>
-      </div>
+      <Link to={'/'}><img src={logo} alt="red arrow" className="imgLogo"/></Link>
       <nav className="search">
         <img src={search} alt="magnifier" />
         <input
