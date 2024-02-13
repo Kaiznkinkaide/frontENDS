@@ -38,10 +38,12 @@ const LeaguePage = () => {
                 <section className="leaguePageSection">
                     {leagueParams ? (
                         <div className="leagueContent">
-                            {/* <img src={imgLeague} alt='matchfield' className="leagueImage"/> */}
-                            <div className="leagueText">
-                                <p className="leaguePageH1">{leagueParams.leaguename}</p>
-                                <p className="leaguePageH2">{backup?.[0]?.strSport}</p>
+                            <div className="leaguePageBox">
+                                <img src={imgLeague} alt='matchfield' className="leagueImage"/>
+                                <div className="leagueText">
+                                    <p className="leaguePageH1">{leagueParams.leaguename}</p>
+                                    <p className="leaguePageH2">{backup?.[0]?.strSport}</p>
+                                </div>
                             </div>
                             {backup?.map((team, index) => {
 
