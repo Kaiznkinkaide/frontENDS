@@ -50,8 +50,8 @@ const LeaguePage = () => {
                                 return (
                                     <div className="leagueResults" key={index}>
                                         <Link to={`/${team?.strTeam}/details`}>
-                                            <h3 className="leaguePageH3">{team?.strTeam}</h3>
-                                            <h4 className="leaguePageH4">{team?.strStadiumLocation}</h4>
+                                            <h3 className="leaguePageH3">{team?.strTeam} <span className="leaguePageH4">{team?.strStadiumLocation}</span></h3>
+                                            
                                         </Link>
                                     </div>
                                 );
