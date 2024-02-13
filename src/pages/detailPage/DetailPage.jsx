@@ -7,12 +7,12 @@ import replacement from "../../assets/img/replacement.jpg"
 
 const DetailPage = () => {
   const detailParams = useParams()
-  console.log(detailParams);
+  // console.log(detailParams);
   const {teams, setTeams} = useContext(mainContext)
-  console.log("teams", teams);
+  // console.log("teams", teams);
 
   const filteredTeams = teams.filter((team) => team.strTeam == detailParams.teamname)
-  console.log("filteredTeams", filteredTeams);
+  // console.log("filteredTeams", filteredTeams);
 
   // Onclick Function für Website
   const openInNewTabWithoutWWW = (url) => {
@@ -68,29 +68,44 @@ const DetailPage = () => {
                   </div>
                 </div>
                 <img src={filteredTeam?.strTeamBadge} alt={filteredTeam?.strTeam} className='detailLogo'/>
-                <h2>STADIUM</h2>
-                <div>
-                  <p>{filteredTeam?.strStadiumDescription}</p>
-                  <div>
-                    <h3>{filteredTeam?.strStadium}</h3>
-                    <p>Home</p>
-                    <h3>{filteredTeam?.intStadiumCapacity}</h3>
-                    <p>Capacity</p>
+                <h2 className='detailH2Stadium'>STADIUM</h2>
+                <div className='detailDivStadiumInfo'>
+                  <div className='detailDivStadium'>
+                    <p className='detailPStadium'>{filteredTeam?.strStadiumDescription}</p>
+                  </div>
+                  <div className='detailDivStadiumCapacity'>
+                    <h3 className='detailH3StadiumCapacity'>{filteredTeam?.strStadium}</h3>
+                    <p className='detailPStadiumCapacity'>Home</p>
+                    <h3 className='detailH3StadiumCapacity'>{filteredTeam?.intStadiumCapacity}</h3>
+                    <p className='detailPStadiumCapacity'>Capacity</p>
                   </div>
                 </div>
-                <div>
-                  <button onClick={() => openInNewTabWithoutWWW(filteredTeam?.strWebsite)}>WEBSITE</button>
-                  <button onClick={() => openInNewTab(filteredTeam?.strTwitter)}>TWITTER</button>
-                  <button onClick={() => openInNewTab(filteredTeam?.strInstagram)}>INSTAGRAM</button>
-                  <button onClick={() => openInNewTab(filteredTeam?.strYoutube)}>YOUTUBE</button>
-                  <button onClick={() => openInNewTab(filteredTeam?.strFacebook)}>FACEBOOK</button>
+                <div className='detailDivPages'>
+                  <div className='detailDivLinks'>
+                    <button onClick={() => openInNewTabWithoutWWW(filteredTeam?.strWebsite)} className='detailButtonLinks'>
+                      <p className='detailPLinks'>WEBSITE</p>
+                    </button>
+                    <button onClick={() => openInNewTab(filteredTeam?.strTwitter)}className='detailButtonLinks'>
+                      <p className='detailPLinks'>TWITTER</p>
+                    </button>
+                    <button onClick={() => openInNewTab(filteredTeam?.strInstagram)}className='detailButtonLinks'>
+                      <p className='detailPLinks'>INSTAGRAM</p>
+                    </button>
+                    <button onClick={() => openInNewTab(filteredTeam?.strYoutube)}className='detailButtonLinks'>
+                      <p className='detailPLinks'>YOUTUBE</p>
+                    </button>
+                    <button onClick={() => openInNewTab(filteredTeam?.strFacebook)}className='detailButtonLinks'>
+                      <p className='detailPLinks'>FACEBOOK</p>
+                    </button>
+                  </div>
                 </div>
               </section>
             )
           })}
         </>
       )
-      : (<p>Loading...</p>)}
+      : (<span className="loader"></span>)
+      }
       </main>
     </>
   )

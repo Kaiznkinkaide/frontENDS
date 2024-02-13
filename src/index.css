@@ -30,11 +30,13 @@
   --font-size-h3: 3rem;
   --font-size-h3-detail: 2.25rem;
   --font-size-h4: 1.5rem;
+  --font-size-h4-detail: 3.75rem;
   --font-size-logo: 1.5rem;
   --font-size-letter: 18.75rem;
   --font-size-dropdown: 1.125rem;
   --font-size-p: 1.125rem;
   --font-size-description: 4.5rem;
+  --font-size-detail-buttons: 2.25rem;
 
   --font-weight-h4-p: 400;
   --font-weight-rest: 700;
@@ -44,6 +46,52 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+/* Loading Animation */
+
+.loader {
+  width: calc(100px - 24px);
+  height: 50px;
+  position: relative;
+  animation: flippx 2s infinite linear;
+}
+.loader:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #FFF;
+  transform-origin: -24px 50%;
+  animation: spin 1s infinite linear;
+}
+.loader:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% , -50%);
+  background: #fff;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+@keyframes flippx {
+  0%, 49% {
+      transform: scaleX(1);
+  }
+  50%, 100% {
+      transform: scaleX(-1);
+  }
+}
+@keyframes spin {
+  100% {
+      transform: rotate(360deg);
+  }
+}   
 
 /* Media Queries */
 

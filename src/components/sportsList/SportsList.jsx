@@ -9,7 +9,7 @@ const SportsList = () => {
     return (
         <>
             {Object.entries(filteredLeagues).length === 0 ? (
-                <p>Loading...</p>
+                <span className="loader"></span>
             ) : (
                 <>
                     {Object.entries(filteredLeagues).map(([letter, leagues]) => (

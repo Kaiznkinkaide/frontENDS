@@ -54,6 +54,7 @@ main {
     font-family: var(--font-family-OpenSans);
     font-weight: var(--font-weight-rest);
     margin-top: 1rem;
+    text-align: center;
 }
 
 .detailPCountry {
@@ -66,12 +67,12 @@ main {
 .detailDivCompetitions {
     display: flex;
     justify-content: flex-end;
-    margin-right: 5rem;
+    align-items: first baseline;
+    margin-right: 7rem;
     margin-bottom: 5rem;
 }
 
 .detailPCompetitions{
-    margin-top: 0.8rem;
     margin-right: 2rem;
     font-size: var(--font-size-p);
     color: white;
@@ -94,8 +95,6 @@ main {
 
 .detailLinkLeagues {
     display: flex;
-    align-items: last baseline;
-    gap: 1rem;
     position: relative;
     transition: 0.3s;
     max-width: 100%;
@@ -163,4 +162,111 @@ main {
     width: 10rem;
     align-self: center;
     margin: 5rem 0;
+}
+
+.detailH2Stadium {
+    font-size: var(--font-size-h4-detail);
+    color: white;
+    font-family: var(--font-family-OpenSans);
+    font-weight: var(--font-weight-rest);
+    margin-left: 5rem;
+}
+
+.detailDivStadiumInfo {
+    display: flex;
+    align-items: center;
+    margin: 2rem 5rem;
+}
+
+.detailDivStadium {
+    column-count: 2; 
+    column-gap: 2rem;
+    column-width: 20%;
+    width: 60%;
+    margin-right: 4rem;
+}
+
+.detailPStadium {
+    margin: 0 0 1.35rem 0;
+    font-size: var(--font-size-p);
+    color: white;
+    font-family: var(--font-family-OpenSans);
+    font-weight: var(--font-weight-h4-p);
+    line-height: 1.35rem;
+    text-align: justify; 
+}
+
+.detailDivStadiumCapacity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+.detailH3StadiumCapacity {
+    font-size: var(--font-size-h3-detail);
+    color: white;
+    font-family: var(--font-family-OpenSans);
+    font-weight: var(--font-weight-rest);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.detailPStadiumCapacity {
+    font-size: var(--font-size-p);
+    color: white;
+    font-family: var(--font-family-OpenSans);
+    font-weight: var(--font-weight-h4-p);
+}
+
+.detailDivPages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detailDivLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin: 5rem 0;
+}
+
+.detailPLinks {
+    font-size: var(--font-size-detail-buttons);
+    color: white;
+    font-family: var(--font-family-OpenSans);
+    font-weight: var(--font-weight-rest);
+}
+
+.detailButtonLinks {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+    max-width: 100%;
+    width: max-content;
+}
+
+.detailButtonLinks::after {
+    content: "";
+    background-color: black;
+	position: absolute;
+	bottom: 7%;
+	left: 0;
+	height: 1rem;
+	width: 0;
+	transition: 0.3s;
+    z-index: -2;
+}
+
+.detailButtonLinks:hover, .detailButtonLinks:focus {
+    color: var(--color-red);
+}
+
+.detailButtonLinks:hover::after, .detailButtonLinks:focus::after {
+    background-color: var(--color-red);
+    width: 100%;
 }
