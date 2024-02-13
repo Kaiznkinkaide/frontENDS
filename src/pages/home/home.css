@@ -1,6 +1,3 @@
-main {
-    position: relative;
-}
 
 .homeDivH1Image {
     display: flex;
@@ -18,6 +15,7 @@ h1 {
     font-size: var(--font-size-h1);
     color: var(--color-red);
     font-family: var(--font-family-Monsterrat);
+    font-weight: var(--font-weight-rest);
     right: 0;
     margin-right: 5rem;
     text-align: end;
