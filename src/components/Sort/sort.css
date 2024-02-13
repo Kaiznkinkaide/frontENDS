@@ -1,8 +1,37 @@
+.sortDivAll {
+    margin-top: 10rem;
+    margin-left: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sortDivSelection {
+    display: flex;
+    gap: 2rem;
+}
+
+.sortP {
+    font-size: var(--font-size-p);
+    color: white;
+    font-family: var(--font-family-OpenSans);
+    font-weight: var(--font-weight-h4-p);
+}
+
+.sortButton {
+    background: none;
+    border: 2px solid white;
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+    font-size: var(--font-size-p);
+    color: white;
+    font-family: var(--font-family-OpenSans);
+    font-weight: var(--font-weight-h4-p);
+}
+
 .sortDiv {
     display: flex;
-    justify-content: flex-end;
     gap: 2rem;
-    margin-top: 5rem;
     margin-right: 5rem;
 }
 

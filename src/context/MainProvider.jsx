@@ -9,8 +9,8 @@ const MainProvider = ({ children }) => {
   const [backup, setBackup] = useState([]);
   const [groupedLeagues, setGroupedLeagues] = useState({});
   const [searchTerm, setSearchTerm] = useState("");
-  const [sportFilter, setSportFilter] = useState("");
-  const [countryFilter, setCountryFilter] = useState("");
+  let [sportFilter, setSportFilter] = useState("");
+  let [countryFilter, setCountryFilter] = useState("");
   const [showArrow, setShowArrow] = useState(false);
 
   const sports = [
@@ -111,7 +111,9 @@ const MainProvider = ({ children }) => {
         groupedLeagues,
         filteredLeagues,
         setSearchTerm,
+        sportFilter,
         setSportFilter,
+        countryFilter,
         setCountryFilter,
         sports,
         countries,
