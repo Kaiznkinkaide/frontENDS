@@ -47,9 +47,19 @@ body {
   flex-direction: column;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 10rem;
+  height: 100vh;
+}
+
 /* Loading Animation */
 
 .loader {
+  justify-self: center;
+  align-self: center;
   width: calc(100px - 24px);
   height: 50px;
   position: relative;
