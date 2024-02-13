@@ -66,6 +66,7 @@
 }
 
 .homeH4Leagues {
+    margin-left: 0.5rem;
     font-size: var(--font-size-h4);
     color: white;
     font-family: var(--font-family-OpenSans);
