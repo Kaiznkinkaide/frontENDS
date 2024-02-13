@@ -58,7 +58,8 @@ const LeaguePage = () => {
                             })}
                         </div>
                     ) : (
-                        <p>Loading...</p>
+                        // <p>Loading...</p>
+                        <span className="loader"></span>
                     )}
                 </section>
             </main>
