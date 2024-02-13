@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { mainContext } from "../../context/MainProvider";
 import logo from "../../assets/img/SPORTOPOLIS-3000.png"
-import search from "../../assets/img/search.png"
+import search from "../../assets/img/glass.svg"
 import "./nav.css"
 import { Link } from "react-router-dom";
 
