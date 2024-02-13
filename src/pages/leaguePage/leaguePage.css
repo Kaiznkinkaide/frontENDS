@@ -17,7 +17,6 @@
 
 .leaguePageBox {
     display: flex;
-    border: 3px solid lightgreen;
 }
 
 .leagueImage {
@@ -59,8 +58,8 @@
 }
 
 .leagueResults a:hover {
-    transform: scale(.9);
-    transition: transform 0.3s;
+    transform: scale(1.5) translate(20%, 0); 
+    transition: transform 0.5s;
 }
 
 .leaguePageH3 {
