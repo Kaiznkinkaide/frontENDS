@@ -32,38 +32,42 @@ const DetailPage = () => {
       ?(
         <>
           {filteredTeams?.map((filteredTeam, index) => {
-            console.log("filteredTeam", filteredTeam);
+            // console.log("filteredTeam", filteredTeam);
             return(
-              <section key={index}>
-                <div>
-                  <h2>{filteredTeam?.strTeam}</h2>
-                  <img src={filteredTeam?.strStadiumThumb ? filteredTeam?.strStadiumThumb : replacement} alt={filteredTeam?.strTeam} className='detailFirstImg'/>
+              <section key={index} className='detailSection'>
+                <h2 className='detailH2Title'>{filteredTeam?.strTeam}</h2>
+                <div className='detailDivTitle'>
+                  <div className='detailDivCountry'>
+                    <h3 className='detailH3Country'>{filteredTeam?.strCountry}</h3>
+                    <p className='detailPCountry'>Country</p>
+                    <h3 className='detailH3Country'>{filteredTeam?.strStadiumLocation}</h3>
+                    <p className='detailPCountry'>Location</p>
+                    <h3 className='detailH3Country'>{filteredTeam?.intFormedYear}</h3>
+                    <p className='detailPCountry'>Established</p>
+                    <h3 className='detailH3Country'>{filteredTeam?.strSport}</h3>
+                    <p className='detailPCountry'>Sport</p>
+                  </div>
+                  <img src={filteredTeam?.strStadiumThumb ? filteredTeam?.strStadiumThumb : replacement} alt={filteredTeam?.strTeam} className={filteredTeam?.strStadiumThumb ? 'detailFirstImg' : 'detailFirstImgReplacement'}/>
                 </div>
-                <div>
-                  <h3>{filteredTeam?.strCountry}</h3>
-                  <p>Country</p>
-                  <h3>{filteredTeam?.strStadiumLocation}</h3>
-                  <p>Location</p>
-                  <h3>{filteredTeam?.intFormedYear}</h3>
-                  <p>Established</p>
-                  <h3>{filteredTeam?.strSport}</h3>
-                  <p>Sport</p>
+                <div className='detailDivCompetitions'>
+                  <p className='detailPCompetitions'>COMPETITIONS</p>
+                  <div className='detailDivLinks'>
+                    <Link to={`/${filteredTeam?.strLeague}`} className="detailLinkLeagues"><h3 className='detailH3Leagues'>{filteredTeam?.strLeague}</h3></Link>
+                    <Link to={`/${filteredTeam?.strLeague}`} className="detailLinkLeagues"><h3 className='detailH3Leagues'>{filteredTeam?.strLeague2}</h3></Link>
+                    <Link to={`/${filteredTeam?.strLeague}`} className="detailLinkLeagues"><h3 className='detailH3Leagues'>{filteredTeam?.strLeague3}</h3></Link>
+                    <Link to={`/${filteredTeam?.strLeague}`} className="detailLinkLeagues"><h3 className='detailH3Leagues'>{filteredTeam?.strLeague4}</h3></Link>
+                    <Link to={`/${filteredTeam?.strLeague}`} className="detailLinkLeagues"><h3 className='detailH3Leagues'>{filteredTeam?.strLeague5}</h3></Link>
+                    <Link to={`/${filteredTeam?.strLeague}`} className="detailLinkLeagues"><h3 className='detailH3Leagues'>{filteredTeam?.strLeague6}</h3></Link>
+                    <Link to={`/${filteredTeam?.strLeague}`} className="detailLinkLeagues"><h3 className='detailH3Leagues'>{filteredTeam?.strLeague7}</h3></Link>
+                  </div>
                 </div>
-                <div>
-                  <p>COMPETITIONS</p>
-                  <Link to={`/${filteredTeam?.strLeague}`} className="detailLinkLeagues"><h3 className='detailH3Leagues'>{filteredTeam?.strLeague}</h3></Link>
-                  <Link to={`/${filteredTeam?.strLeague}`} className="detailLinkLeagues"><h3 className='detailH3Leagues'>{filteredTeam?.strLeague2}</h3></Link>
-                  <Link to={`/${filteredTeam?.strLeague}`} className="detailLinkLeagues"><h3 className='detailH3Leagues'>{filteredTeam?.strLeague3}</h3></Link>
-                  <Link to={`/${filteredTeam?.strLeague}`} className="detailLinkLeagues"><h3 className='detailH3Leagues'>{filteredTeam?.strLeague4}</h3></Link>
-                  <Link to={`/${filteredTeam?.strLeague}`} className="detailLinkLeagues"><h3 className='detailH3Leagues'>{filteredTeam?.strLeague5}</h3></Link>
-                  <Link to={`/${filteredTeam?.strLeague}`} className="detailLinkLeagues"><h3 className='detailH3Leagues'>{filteredTeam?.strLeague6}</h3></Link>
-                  <Link to={`/${filteredTeam?.strLeague}`} className="detailLinkLeagues"><h3 className='detailH3Leagues'>{filteredTeam?.strLeague7}</h3></Link>
+                <div className='detailDivDescription'>
+                  <h2 className='detailH2Description'>DESCRIPTION</h2>
+                  <div className='detailDivPDescription'>
+                    <p className='detailPDescription'>{filteredTeam?.strDescriptionEN}</p>
+                  </div>
                 </div>
-                <div>
-                  <h2>DESCRIPTION</h2>
-                  <p>{filteredTeam?.strDescriptionEN}</p>
-                </div>
-                <img src={filteredTeam?.strTeamBadge} alt="" />
+                <img src={filteredTeam?.strTeamBadge} alt={filteredTeam?.strTeam} className='detailLogo'/>
                 <h2>STADIUM</h2>
                 <div>
                   <p>{filteredTeam?.strStadiumDescription}</p>

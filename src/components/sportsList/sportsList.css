@@ -32,7 +32,7 @@
     gap: 1rem;
     position: relative;
     transition: 0.3s;
-    max-width: 100%;
+    max-width: 90%;
     width: max-content;
     cursor: pointer;
 }
