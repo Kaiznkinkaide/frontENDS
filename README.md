@@ -1,8 +1,24 @@
-# React + Vite
+# Sportopolis 3000
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A website that features sports search and info functionality consuming the SportsDB API.
 
-Currently, two official plugins are available:
+Part of a coding project for SuperCode Bootcamp.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Authors
+
+- [@johannahaer](https://github.com/JohannaHaer)
+- [@webkopp](https://github.com/webkopp)
+- [@kaiznkinkaide](https://github.com/Kaiznkinkaide)
+- [@digitalflowerstudio](https://www.github.com/digitalflowerstudio)
+
+## Demo
+
+https://frontendends.netlify.app/
+
+## Screenshots
+
+![App Screenshot](./src/assets/img/screenshot.png)
+
+## Tech Stack
+
+**Client:** React, Netlify, Axios, SportsDB Api, HTML, CSS, Javascript
