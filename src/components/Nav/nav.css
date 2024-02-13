@@ -2,11 +2,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2.5rem;
+    padding: 1rem 2.5rem;
     background-color: black;
     position: fixed;
     width: 100vw;
-    height: 20vh;
     z-index: 2;
 }
 
